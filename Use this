@@ -1,0 +1,4 @@
+-- Loadstring to fetch script from GitHub
+local url = "https://raw.githubusercontent.com/username/repository/branch/lock_on_script.lua" -- Replace with your GitHub raw URL
+local response = game:HttpGet(url, true) -- Fetch the script content from the URL
+loadstring(response)() -- Execute the fetched script
